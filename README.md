@@ -12,7 +12,6 @@ Este repositorio contiene el código fuente para el sistema de gestión del Cole
 * **Gestión de Alumnos:** Permite registrar, modificar y eliminar perfiles de estudiantes.
 * **Control de Calificaciones:** Módulo para que los profesores asignen y actualicen calificaciones.
 * **Dashboard Administrativo:** Panel de control para visualizar estadísticas y gestionar el sistema.
-* **(Añade aquí otras características que tenga tu proyecto)**
 
 ---
 
@@ -83,7 +82,7 @@ Asegúrate de tener instalado lo siguiente:
 
 ## 👨‍💻 Autores y Equipo
 
-Este proyecto fue desarrollado por:
+Este proyecto es desarrollado por:
 
 * **Cangas Castro Jorge Alberto** - *Desarrollador Backend*
 * **Chairez Duarte Luis Ernesto** - *Desarrollador Frontend*
