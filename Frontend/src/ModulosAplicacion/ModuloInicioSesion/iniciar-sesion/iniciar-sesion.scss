@@ -1,0 +1,190 @@
+
+:host {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* --- Fondo Animado --- */
+.login-page-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+  
+  background-image: linear-gradient(rgba(18, 52, 117, 0.6), rgba(18, 52, 117, 0.6)), url('https://sic.cultura.gob.mx/images/135055');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: gradientAnimation 15s ease infinite;
+
+
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* --- Tarjeta de Vidrio (Glassmorphism) --- */
+.glass-card {
+  width: 100%;
+  max-width: 450px;
+  padding: 3rem;
+  background: rgba(255, 255, 255);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px); /* Para Safari */
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+  animation: fadeIn 0.6s ease-out;
+}
+
+.card-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.card-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a2c4e;
+}
+
+.branding-content .welcome-slogan {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.branding-content .welcome-title {
+  font-size:1.5rem;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  margin-bottom: 0.5rem; /* Ajustamos el margen */
+}
+
+.branding-content .institutional-slogan {
+  font-size: 1rem;
+  opacity: 0.9;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  padding-top: 1rem;
+  margin-top: 1rem;
+  display: inline-block; /* Para que el borde se ajuste al texto */
+}
+
+.login-logo {
+  height: 50px; /* Ajusta la altura según el tamaño de tu logo */
+  width: auto;  /* Mantiene la proporción */
+  margin-bottom: 1.5rem; /* Espacio entre el logo y el título */
+}
+
+.card-header p {
+  color: #4a5a7e;
+  font-size: 1rem;
+}
+
+/* --- Inputs Interactivos con Etiqueta Flotante --- */
+.input-wrapper {
+  position: relative;
+  margin-bottom: 2rem;
+  color:rgb(188, 188, 189)
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px 12px 12px 45px; /* Espacio para el ícono */
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  font-size: 1rem;
+  color: #1a2c4e;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.form-label {
+  position: absolute;
+  top: 13px;
+  left: 45px;
+  color: #4a5a7e;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+/* Animación de la etiqueta */
+.form-input:focus ~ .form-label,
+.form-input:not(:placeholder-shown) ~ .form-label {
+  top: -22px;
+  left: 5px;
+  font-size: 0.8rem;
+  color: #1a2c4e;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 0 5px;
+  border-radius: 4px;
+}
+
+.input-icon {
+  position: absolute;
+  left: 15px;
+  top: 14px;
+  color: #4a5a7e;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 15px;
+  top: 14px;
+  color: #4a5a7e;
+  cursor: pointer;
+}
+
+.form-input:focus {
+  border-color: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.form-options {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+}
+
+.form-options a {
+  color: #1a2c4e;
+  text-decoration: none;
+}
+
+/* --- Botón con Efecto Glow --- */
+.btn-glow {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  background: linear-gradient(90deg, #3a7bd5, #00d2ff);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+}
+
+.btn-glow:hover:not(:disabled) {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(58, 123, 213, 0.3);
+}
+
+.btn-glow:disabled {
+  background: #a9c2e6;
+  cursor: not-allowed;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}

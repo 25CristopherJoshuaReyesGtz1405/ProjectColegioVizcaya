@@ -1,0 +1,35 @@
+.toast-container {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 25px 25px;
+  border-radius: 40px;
+  color: white;
+  z-index: 1000;
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.2);
+  animation: slideIn 0.5s ease forwards;
+}
+
+/* Tipos de Toast */
+.toast-container.success {
+  background: linear-gradient(45deg, #28a745, #218838);
+}
+.toast-container.error {
+  background: linear-gradient(45deg, #dc3545, #c82333);
+}
+
+/* Animación de entrada */
+@keyframes slideIn {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
