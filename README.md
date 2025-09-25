@@ -42,7 +42,7 @@ Asegúrate de tener instalado lo siguiente:
 
 1.  **Clona el repositorio:**
     ```bash
-    git clone [URL_DE_TU_REPOSITORIO_EN_GITHUB]
+    git clone https://github.com/25CristopherJoshuaReyesGtz1405/ProjectColegioVizcaya.git
     ```
 
 2.  **Navega a la carpeta del proyecto:**
